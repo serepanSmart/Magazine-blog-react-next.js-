@@ -1,0 +1,105 @@
+@import "../../../styles/vars";
+@import "../../../styles/mixins";
+
+.header {
+ 
+    .headerContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 17px;
+
+        @include screen(xxl) {
+            padding: 17px 40px 17px 70px;
+        }
+
+        .headerContainerMobile {
+            position: relative;
+            padding: 60px 20px 20px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            max-width: 300px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: $main-bg;
+            transition: $transition;
+            z-index: 1;
+            box-shadow: 0 0 14px 1px $decor_color;
+
+            a, button {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .closeHeader {
+                position: absolute;
+                top: 10px;
+                left: 20px;
+                font-size: 40px;
+                color: $decor_color;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .logo {
+        img {
+            width: 185px;
+            height: 35px;
+            @include screen(md) {
+                width: 210px;
+            }
+        }
+    }
+
+    .headerNavbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 22%;
+        @include screen(md) {
+            width: 40%;
+        }
+        @include screen(1024px) {
+            width: 30%;
+        }
+        @include screen(xl) {
+            width: 25%;
+        }
+        >a {
+            display: none;
+
+            @include screen(md) {
+                display: block;
+            }
+        }
+
+        .headerNavbarToggle {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+
+            span {
+                color: $decor_color;
+
+                &.toggle {
+                    display: block;
+                    background: $decor_color;
+                    width: 18px;
+                    height: 2px;
+                    margin-left: 4px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+main {
+    .subscribeContainer {
+        margin-top: -35px;
+        @include screen(md) {
+            margin-top: -50px;
+        }
+        @include screen(lg) {
+            margin-top: -60px;
+        }
+        @include screen(xl) {
+            margin-top: -70px;
+        }
+    }
+}

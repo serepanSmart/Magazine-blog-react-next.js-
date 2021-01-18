@@ -1,0 +1,89 @@
+@import "../../styles/vars";
+@import "../../styles/mixins";
+
+.textInput {
+    margin-bottom: 15px;
+
+    input {
+        width: 100%;
+        height: 50px;
+        padding: 15px 16px 14px;
+        border-radius: 1px;
+        border-width: 1px;
+
+        @include screen(md) {
+            max-width: 417px;
+        }
+
+        &:focus {
+            outline-color: $decor_color;
+
+            &::placeholder {
+                opacity: 0;
+            }
+        }
+
+        &::placeholder {
+            transition: $transition;
+        }
+
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: 11px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    label {
+        cursor: pointer;
+    }
+    &:hover {
+        label {
+            text-decoration: underline;
+            text-decoration-color: $decor_color;
+        }
+        input {
+            box-shadow: 0 0 3px 0px $decor_color;
+        }
+    }
+
+    input {
+        margin-right: 7px;
+        position: relative;
+        width: 15px;
+        height: 15px;
+
+        &::before {
+            content: '\2713';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            width: 14px;
+            height: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 15px;
+            line-height: 1;
+            background: $decor_color;
+            border-radius: 4px;
+            padding: 2px;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        &:checked {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+}

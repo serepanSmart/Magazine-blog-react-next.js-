@@ -1,0 +1,41 @@
+@import "../../styles/vars";
+@import "../../styles/mixins";
+
+.button {
+    padding: 9px 24px;
+    font-size: 1em;
+    line-height: 1.25;
+    text-align: center;
+    border-radius: 4px;
+    transition: $transition;
+
+    &.buttonHollow {
+        color: $decor_color;
+        border: 1px solid $decor_color;
+
+        &:hover {
+            background: $decor_color;
+            color: $white_text_color;
+        }
+    }
+
+    &.buttonFull {
+        color: $white_text_color;
+        border: 1px solid $decor_color;
+        background: $decor_color;
+
+        &:hover {
+            background: transparent;
+            color: $decor_color;
+            border-color: $decor_color;
+        }
+        &.disabled {
+            opacity: 0.7;
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+    &.chosen {
+        border-width: 3px;
+    }
+}

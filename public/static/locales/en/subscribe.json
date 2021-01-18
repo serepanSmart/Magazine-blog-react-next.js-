@@ -1,0 +1,28 @@
+{
+    "1": {
+        "title": "Il Manifesto membership",
+        "plan": "€37.50/Quarterly",
+        "text": "Unfortunately that's not me pregnant to update. Tomorrow is a complete online travel booking.",
+        "list": "Bullet list",
+        "link": "Find Out More"
+    },
+    "2": {
+        "title": "Print + digital subscription",
+        "plan": "€30/Monthly",
+        "text": "Print edition of Il Manifesto, delivered 6 days a week. Print subscriptions also include an all-digital subscription and unlimited reading on ilmanifesto.global",
+        "list": "Bullet list",
+        "link": "Select subscription"
+    },
+    "3": {
+        "title": "Digital subscription",
+        "plan": "€20/Monthly",
+        "text": "Print edition of Il Manifesto, delivered 6 days a week. Print subscriptions also include an all-digital subscription and unlimited reading on ilmanifesto.global.",
+        "list": "Bullet list",
+        "link": "Select subscription"
+    },
+    "text": {
+        "title": "Pick your subscription:",
+        "subtitle": "Il Manifesto membership",
+        "text": "Print edition of Il Manifesto, delivered 6 days a week. Print subscriptions also include an all-digital subscription and unlimited reading on ilmanifesto.global."
+    }
+}

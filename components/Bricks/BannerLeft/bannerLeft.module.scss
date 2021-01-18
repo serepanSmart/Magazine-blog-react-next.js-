@@ -1,0 +1,47 @@
+@import '../../../styles/vars';
+@import '../../../styles/mixins';
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 42px 25px 55px;
+    background: $decor_color;
+    color: $white_text_color;
+
+    @include screen(lg) {
+        width: 50%;
+    }
+
+    @include screen(xl) {
+        padding: 60px 90px;
+    }
+    @include screen(xxl) {
+        padding: 60px 110px 90px 150px;
+    }
+
+    p {
+        font-family: $font_2;
+
+        @include screen(xl) {
+            margin-bottom: 80px;
+        }
+
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    img {
+        width: 417px;
+        height: 374px;
+        display: none;
+
+        @include screen(lg) {
+            display: block;
+        }
+    }
+}

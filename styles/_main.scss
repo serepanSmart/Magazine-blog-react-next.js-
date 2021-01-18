@@ -1,0 +1,105 @@
+html,
+body {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  font-family: $font;
+}
+
+.container {
+  padding: 30px 15px;
+  max-width: 1440px;
+  margin: auto;
+
+  @include screen(md) {
+    padding: 40px 15px;
+  }
+
+  @include screen(lg) {
+    padding: 50px 30px;
+  }
+
+  @include screen(xl) {
+    padding: 60px 30px;
+  }
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.25;
+  font-size: $text_size;
+
+  &.link {
+    color: $text_color;
+    font-weight: 600;
+
+    &:hover {
+      color: $decor_color;
+    }
+
+    &__decor {
+      color: $decor_color;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+button {
+  outline: none;
+}
+
+p {
+  font-size: $text_size;
+}
+
+h1 {
+  font-size: $h1_size-m;
+  margin-bottom: 11px;
+  font-weight: 900;
+
+  @include screen(md) {
+    font-size: $h1_size-t;
+  }
+
+  @include screen(lg) {
+    font-size: $h1_size-d;
+  }
+}
+
+h2 {
+  font-size: $h2_size-m;
+  margin-bottom: 11px;
+
+  @include screen(md) {
+    font-size: $h2_size-t;
+  }
+
+  @include screen(lg) {
+    font-size: $h2_size-d;
+  }
+}
+
+button {
+  font-family: $font;
+  font-weight: 600;
+  background: $main_bg;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}

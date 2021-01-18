@@ -1,0 +1,27 @@
+// COLORS
+$decor_color: #c02b2b;
+$black: #000;
+$text_color: #333;
+$light_text_color: #666;
+$light_color: #cac7c7;
+$white_text_color: #fff;
+$main-bg: #fff;
+$light_block_bg: #f6e7d4;
+
+//TRANSITION
+$transition: all 0.2s ease-in-out;
+
+//FONT-SIZES
+$h1_size-m: 24px;
+$h1_size-t: 28px;
+$h1_size-d: 36px;
+$h2_size-m: 20px;
+$h2_size-t: 26px;
+$h2_size-d: 30px;
+$text_size: 1em;
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$font: 'Inter', sans-serif;
+$font_2: 'Times New Roman', Times, serif;
+

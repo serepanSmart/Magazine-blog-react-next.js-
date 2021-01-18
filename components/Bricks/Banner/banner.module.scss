@@ -1,0 +1,31 @@
+@import "../../../styles/vars";
+@import "../../../styles/mixins";
+
+.banner {
+    background: $decor_color;
+    min-height: 150px;
+    display: flex;
+    @include screen(md) {
+        min-height: 200px;
+    }
+    @include screen(lg) {
+        min-height: 230px;
+    }
+    @include screen(xl) {
+        min-height: 255px;
+    }
+    .bannerContainer {
+        width: 100%;
+        max-width: 1440px;
+        h1, p {
+            color: $white_text_color;
+        }
+        @include screen(xl) {
+            max-width: 1079px;
+        }
+        p {
+            font-family: $font_2;
+            font-style: italic;
+        }
+    }
+}

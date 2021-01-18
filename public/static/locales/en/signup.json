@@ -1,0 +1,14 @@
+{
+    "h1": "Sign up using your email",
+    "subtitle": "Already have an account?",
+    "subtitleLink": "Sign In",
+    "labelEmail": "EMAIL ADDRESS",
+    "labelPassword": "PASSWORD",
+    "confirmPassword": "CONFIRM PASSWORD",
+    "phEmail": "E-mail",
+    "phPassword": "Enter password",
+    "phPasswordConfirm": "Confirm password",
+    "labelCheckbox": "I agree to the",
+    "linkCheckbox": "terms and conditions",
+    "buttonValue": "Register"
+}

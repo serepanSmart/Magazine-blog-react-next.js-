@@ -1,0 +1,28 @@
+{
+    "1": {
+        "title": "Il manifesto appartenenza",
+        "plan": "€37,50/trimestrale",
+        "text": "Sfortunatamente non sono io incinta da aggiornare. Domani è una prenotazione completa di viaggi online.",
+        "list": "elenco puntato",
+        "link": "Per saperne di più"
+    },
+    "2": {
+        "title": "Stampa + abbonamento digitale",
+        "plan": "€30 / mensile",
+        "text": "Edizione cartacea de Il Manifesto, consegnata 6 giorni alla settimana. Gli abbonamenti di stampa includono anche un abbonamento interamente digitale e una lettura illimitata su ilmanifesto.globale",
+        "list": "elenco puntato",
+        "link": "Seleziona abbonamento"
+    },
+    "3": {
+        "title": "Abbonamento digitale",
+        "plan": "€20 / mensile",
+        "text": "Edizione cartacea de Il Manifesto, consegnata 6 giorni alla settimana. Gli abbonamenti di stampa includono anche un abbonamento interamente digitale e una lettura illimitata su ilmanifesto.globale.",
+        "list": "elenco puntato",
+        "link": "Seleziona abbonamento"
+    },
+    "text": {
+        "title": "Scegli il tuo abbonamento:",
+        "subtitle": "Il Manifesto appartenenza",
+        "text": "Edizione cartacea de Il Manifesto, consegnata 6 giorni alla settimana. Gli abbonamenti di stampa includono anche un abbonamento interamente digitale e una lettura illimitata su ilmanifesto.globale."
+    }
+}

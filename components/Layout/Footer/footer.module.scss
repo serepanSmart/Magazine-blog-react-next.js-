@@ -1,0 +1,117 @@
+@import '../../../styles/vars';
+@import '../../../styles/mixins';
+
+.footer {
+    .container {
+        width: 100%;
+        max-width: 1440px;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @include screen(xl) {
+            max-width: 1170px;
+        }
+    }
+
+    h5,
+    h6 {
+        color: $light_color;
+
+        > span {
+            color: $black;
+        }
+    }
+
+    .footerTop,
+    .footerCopyright {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-top: 1px solid $light_color;
+        border-bottom: 1px solid $light_color;
+
+        >div {
+            width: 100%;
+            max-width: 1440px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: auto;
+
+            @include screen(xl) {
+                max-width: 1170px;
+            }
+        }
+    }
+
+    .footerContent {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        @include screen(md) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @include screen(lg) {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .col {
+            width: 100%;
+
+            @include screen(md) {
+                width: 50%;
+            }
+
+            @include screen(lg) {
+                width: 25%;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 20px;
+                border-right: 1px solid $light_color;
+            }
+
+            h6 {
+                margin-bottom: 5px;
+            }
+
+            ul {
+                margin-left: 20px;
+                margin-bottom: 20px;
+
+                li {
+                    list-style: square;
+
+                    &::marker {
+                        color: $light_text_color;
+                    }
+
+                    a {
+                        font-weight: bold;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    .footerCopyright {
+        font-family: $font_2;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+
+        p {
+            span {
+                font-size: 80%;
+            }
+        }
+    }
+}

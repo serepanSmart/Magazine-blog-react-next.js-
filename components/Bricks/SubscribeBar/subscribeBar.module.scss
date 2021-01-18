@@ -1,0 +1,88 @@
+@import '../../../styles/vars';
+@import '../../../styles/mixins';
+
+.bar {
+    border-top: 1px solid $decor_color;
+
+    .barContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 17px;
+
+        @include screen(xxl) {
+            padding: 17px 40px 17px 70px;
+        }
+    }
+
+    .steps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        @include screen(lg) {
+           width: auto;
+        }
+
+        .step {
+            >div:nth-of-type(2) {
+                display: none;
+
+                @include screen(lg) {
+                    display: block;
+                }
+            }
+
+            span {
+                font-size: 12px;
+                line-height: 1.5;
+                font-weight: bold;
+
+                &.selectedType {
+                    font-family: $font_2;
+                    font-weight: normal;
+                    color: $light_text_color;
+                    font-size: 14px;
+                    padding-left: 5px;
+                }
+
+                .switcher {
+                    font-family: $font;
+                    font-weight: bold;
+                    color: $decor_color;
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                &.chosen {
+                    padding-left: 5px;
+                }
+            }
+
+            &:not(:last-child) {
+                @include screen(lg) {
+                    padding-right: 40px;
+                    margin-right: 40px;
+                    
+                }
+            }
+        }
+    }
+
+    .plan {
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        display: none;
+        @include screen(lg) {
+            display: block;
+        }
+
+        a {
+            margin-left: 25px;
+        }
+    }
+}

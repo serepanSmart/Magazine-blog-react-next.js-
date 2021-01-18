@@ -1,0 +1,50 @@
+{
+    "switch": "Switch to coupons",
+    "continueButton": "Continue",
+    "footnote1": "We offer a special discounted postal rate for readers of Sicily and Sardinia.",
+    "footnote2": "All subscriptions are auto-renew, but can be cancelled at anytime.",
+    "titleText": {
+        "title": "What type of subscription would you like?",
+        "subTitle": "We offer two different subscription types: coupons and home delivery. Coupons are only available to customers in Italy."
+    },
+    "packType": {
+        "type1": {
+            "id": 1,
+            "dataValue": "6 days",
+            "title": "6 days, home delivery",
+            "price": "From €30 Monthly",
+            "desc": "Home delivered 6 days a week, excluding Sunday"
+        },
+        "type2": {
+            "id": 2,
+            "dataValue": "4 days",
+            "title": "4 days, home delivery",
+            "price": "From €30 Monthly",
+            "desc": "Home delivered 4 days a week, excluding Sunday"
+        },
+        "type3": {
+            "id": 3,
+            "dataValue": "2 days",
+            "title": "2 days, home delivery",
+            "price": "From €149 Annually",
+            "desc": "Home delivered 2 days a week, excluding Sunday"
+        },
+        "type4": {
+            "id": 4,
+            "dataValue": "1 day",
+            "title": "1 days, home delivery",
+            "price": "From €9 Annually",
+            "desc": "Home 1 day a week, excluding Sunday"
+        }
+    },
+    "deliveryType": {
+        "type1": {
+            "id": 1,
+            "value": "Coupons"
+        },
+        "type2": {
+            "id": 1,
+            "value": "Home delivery"
+        }
+    }
+}

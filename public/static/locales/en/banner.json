@@ -1,0 +1,20 @@
+{
+  "h1": "Sign Up",
+  "subtitle": "Sign up to access more stories for free",
+  "subscribe": {
+    "h1": "Support Il Manifesto with a subscription",
+    "subtitle": "An original form of politics"
+  },
+  "bannerLeft": {
+    "h1": "Build your print subscription",
+    "subtitle": "We offer two types of subscription, a coupon used for redemption at a local newsagent, or home delivery."
+  },
+  "subscribeBar": {
+    "type": "TYPE",
+    "pack": "PACKAGE",
+    "step1": "STEP 1",
+    "step2": "STEP 2",
+    "step3": "STEP 3",
+    "renewal": "RENEWAL"
+  }
+}

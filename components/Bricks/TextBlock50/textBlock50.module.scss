@@ -1,0 +1,34 @@
+@import '../../../styles/vars';
+@import '../../../styles/mixins';
+
+main {
+    .textItem {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        margin: 10px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+
+        @include screen(md) {
+            max-width: 1079px;
+            margin: 30px auto;
+            padding: 15px 40px;
+        }
+        @include screen(lg) {
+            padding: 15px 0;
+        }
+        @include screen(xl) {
+            margin: 55px auto 45px;
+        }
+        h2, p, .plan {
+            color: $light_text_color;
+        }
+        > div {
+            @include screen(xl) {
+               max-width: 50%;
+            } 
+        }
+    }
+}

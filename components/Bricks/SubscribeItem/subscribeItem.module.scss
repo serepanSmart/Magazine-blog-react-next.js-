@@ -1,0 +1,103 @@
+@import '../../../styles/vars';
+@import '../../../styles/mixins';
+
+main {
+    .subscribeItem {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 10px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid $light_color;
+
+        @include screen(md) {
+            flex-direction: row;
+            justify-content: space-between;
+            background: $main-bg;
+
+            >div {
+                width: 50%;
+            }
+        }
+
+        @include screen(xl) {
+            max-width: 1079px;
+            margin: 20px auto;
+        }
+
+        &:first-of-type {
+            background: $light_block_bg;
+        }
+
+        &:nth-of-type(odd) {
+            @include screen(md) {
+                flex-direction: row-reverse;
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .content {
+            padding: 30px 30px 45px;
+            position: relative;
+            z-index: 1;
+
+            ul {
+                margin-bottom: 30px;
+                margin-left: 15px;
+
+                li {
+                    list-style: disc;
+                    color: $light_text_color;
+                }
+            }
+
+            p {
+                margin-bottom: 15px;
+            }
+
+            .plan {
+                font-weight: normal;
+                padding-bottom: 15px;
+                position: relative;
+                margin-bottom: 15px;
+                color: $light_text_color;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 86px;
+                    height: 1px;
+                    background: $light_color;
+                }
+            }
+        }
+
+        .img {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            right: -15px;
+            max-width: 185px;
+            z-index: 0;
+            opacity: 0.6;
+            @include screen(md) {
+                position: static;
+                max-width: 100%;
+                align-items: center;
+                opacity: 1;
+            }
+            @include screen(xl) {
+                position: static;
+                max-width: 100%;
+                align-items: unset;
+            }
+        }
+    }
+}
